@@ -15,7 +15,7 @@ export default{
     createUser: function(userData){
         return axios.post("/api/auth/register", userData);
 },
-
+}
 //     eventPost: function(userData){
 //         return axios.post("/api/event/createEvent", userData);
 //     },

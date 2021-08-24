@@ -1,9 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Login from "./components/Login";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+  BrowserRouter,
+} from "react-router-dom";
 
 function App() {
   return (
-    <h1>Hello React!</h1>
+    <BrowserRouter>
+      <div>
+        <Login />
+      </div>
+    </BrowserRouter>
   );
 }
 
