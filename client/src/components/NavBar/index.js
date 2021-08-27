@@ -5,7 +5,7 @@ import "./style.css";
 
 export default function NavBar() {
   return (
-      <BrowserRouter>
+
       <nav className="nav nav-pills flex-column flex-sm-row">
         <Link
           to="/login"
@@ -15,7 +15,7 @@ export default function NavBar() {
           }
           aria-current="page"
         >
-          Sign in <i class="sign in icon"></i>
+          Sign in 
         </Link>
         <Link
           to="/signup"
@@ -26,10 +26,9 @@ export default function NavBar() {
               : "nav-link"
           }
         >
-          Sign up <i class="user plus icon"></i>
+          Sign up 
         </Link>
       </nav>
-      </BrowserRouter>
     );
       
       

@@ -8,14 +8,22 @@ import {
   Redirect,
   BrowserRouter,
 } from "react-router-dom";
+import Register from "./components/Register";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+        <Switch>
       <div>
-        <Login />
+          <Route exact path= "/login">
+            <Login />
+          </Route>
+          <Route exact path= "/signup">
+            <Register />
+          </Route>
       </div>
-    </BrowserRouter>
+        </Switch>
+    </Router>
   );
 }
 
